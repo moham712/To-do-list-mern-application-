@@ -1,17 +1,15 @@
 const mongoose = require("mongoose");
-const conn = async (req, res) => {
+const conn = async () => {
   try {
-    await mongoose
-      .connect(
-        "mongodb+srv://omsifi_db_user:omsifi_db_user@cluster0.x1awyhi.mongodb.net/"
-      )
-      .then(() => {
-        console.log("connected");
-      });
+    await mongoose.connect(
+      "mongodb://localhost:27017/todo"
+    );
+    console.log("connected");
   } catch (error) {
-    res.status(400).json({
-      message: "not Connected",
-    });
+    console.log("Connection Failed!");
+    console.log("Error Name:", error.name);
+    console.log("Error Message:", error.message);
+    console.log("Full Error:", error);
   }
 };
 conn();

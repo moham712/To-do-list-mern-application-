@@ -1,0 +1,24 @@
+.anim:hover 
+{
+    transform: translateY(-5px);
+box-shadow: #1709d4 1px 3px 12px;
+transition: all ease .5s ;
+}
+.btne
+{
+    outline: none;
+    border: none;
+    background:none;
+    color:white;
+    transition: all ease .5s ;
+}
+.del:hover
+{
+color:red;
+
+}
+.edit:hover
+{
+color:greenyellow;
+}
+

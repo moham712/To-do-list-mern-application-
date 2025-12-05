@@ -1,0 +1,75 @@
+.navbar-nav .nav-link.sign-btn {
+  color: rgb(180, 7, 233) !important;
+  font-size: 20px;
+  font-weight: 500;
+  border: 1px solid rgb(129, 2, 168);
+  border-radius: 10px;
+  margin-right: 5px;
+  padding: 5px;
+  color: white !important ;
+}
+.navbar-nav .nav-link.info-btn
+{
+    font-size: 20px;
+    text-align: center;
+    margin-right: 12px;
+    position: relative;
+    color: white !important;
+   
+
+}
+.navbar-nav .nav-link.info-btn::before{
+    content: "";
+    position: absolute;
+    top:0;
+    left: 0;
+
+    display: block;
+    height: 2px;
+    width:20%;
+    margin-top: 5px;
+    background-color: red;
+}
+.navbar-nav .nav-link.info-btn::after{
+    content: "";
+    position: absolute;
+    bottom:0;
+    right: 0;
+
+    display: block;
+    height: 2px;
+    width:20%;
+    margin-top: 5px;
+    background-color: red;
+}
+
+.navbar-nav .nav-link.info-btn:hover::after,
+.navbar-nav .nav-link.info-btn:hover::before
+{
+   content: ""; 
+   transition: all ease .5s ;
+   animation: beforeAfter 2s ease;
+}
+
+
+@keyframes beforeAfter {
+    from {
+        width: 0%;
+    }
+    to 
+    {
+        width:100%;
+    }
+    
+}
+
+.navbar-nav .nav-link.sign-btn:hover{
+    background-color:rgba(214, 8, 241, 0.199)!important  ;
+}
+
+@media (max-width: 768px) {
+  .navbar-nav .nav-link.sign-btn {
+    margin-top: 10px;
+    text-align: center;
+  }
+}

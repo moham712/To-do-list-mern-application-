@@ -1,0 +1,7 @@
+.footer
+{
+    width:20%;
+    padding: 10px;
+    color: white;
+    background-image: linear-gradient(to bottom, rgb(0, 0, 0),rgb(0,0,0));
+}

@@ -1,0 +1,35 @@
+.ic
+{
+    border:1px solid rgb(33, 19, 109) ;
+   padding:2px ;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.in:hover
+{
+    background-color: #fff;
+    color: blue;
+}
+.insta:hover
+{
+    background-color: #fff;
+    color: rgb(248, 3, 154);
+}
+.github:hover
+{
+    background-color: #fff;
+    color: rgb(0, 0, 0);
+}
+
+.cardo{
+    
+}
+
+.cardo:hover{
+transform: translateY(-5px);
+box-shadow: #1709d4 1px 3px 12px;
+transition: all ease .5s ;
+}
